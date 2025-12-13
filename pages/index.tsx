@@ -16,18 +16,18 @@ const translations = {
 export async function getStaticProps({ locale } : { locale: string }) {
   return {
     props: {
-      allTranslations: translations, // Pass all translations to the page
-      locale, // this is from build system
+      allTranslations: translations,
+      locale,
     },
   };
 }
 
 export default function Home({ allTranslations, locale } : { allTranslations: any, locale: string }) {
-  const [language, setLanguage] = useState<string>(locale); // Initialize with the current locale
+  const [language, setLanguage] = useState<string>(locale); 
 
   const [showResult, setShowResult] = useState(false);
   useEffect(() => {
-    const normalized = navigator.language.split("-")[0]; // "en" | "es"
+    const normalized = navigator.language.split("-")[0];
     setLanguage(normalized in allTranslations ? normalized : "en");
     setShowResult(true);
   }, []);
@@ -38,7 +38,6 @@ export default function Home({ allTranslations, locale } : { allTranslations: an
     setLanguage(newLocale);
   };
 
-  // Access the current translations based on the locale
   const content = allTranslations[language];
 
   return showResult && (

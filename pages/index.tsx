@@ -1,15 +1,16 @@
 import React, {useEffect, useState} from 'react';
+import Image from 'next/image'
 
 const translations = {
   en: {
     greeting: "Hello",
     content: "This is a simple content page supporting English and Spanish.",
-    switch: "Switch to Spanish",
+    switch: "Switch to Serbian",
   },
-  es: {
-    greeting: "Hola",
-    content: "Esta es una página de contenido simple que admite inglés y español.",
-    switch: "Cambiar a inglés",
+  sr: {
+    greeting: "Pozdrav",
+    content: "Ovo je jednostavna stranica na srpskom",
+    switch: "Promjeni na Engleski",
   },
 };
 
@@ -28,13 +29,13 @@ export default function Home({ allTranslations, locale } : { allTranslations: an
   const [showResult, setShowResult] = useState(false);
   useEffect(() => {
     const normalized = navigator.language.split("-")[0];
-    setLanguage(normalized in allTranslations ? normalized : "en");
+    setLanguage(normalized in allTranslations ? normalized : "sr");
     setShowResult(true);
   }, []);
   
 
   const toggleLocale = () => {
-    const newLocale = language === "en" ? "es" : "en";
+    const newLocale = language === "sr" ? "en" : "sr";
     setLanguage(newLocale);
   };
 
@@ -42,10 +43,21 @@ export default function Home({ allTranslations, locale } : { allTranslations: an
 
   return showResult && (
     <div>
+      <div>
+        <div className="w-full flex justify-center">
+          <Image
+            src="/graphics/ninalogo.png"
+            width={600}
+            height={190}
+            alt="Logo"
+          />
+        </div>
+
+      </div>
       <h1>{content.greeting}</h1>
       <p>{content.content}</p>
       <button onClick={toggleLocale}>
-        {language === 'en' ? 'Switch to Spanish' : 'Cambiar a inglés'}
+        {language === 'sr' ? 'Switch to English' : 'Promjeni na srpski'}
       </button>
     </div>
   );

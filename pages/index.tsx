@@ -1,18 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image'
 
-const translations = {
-  en: {
-    greeting: "Hello",
-    content: "This is a simple content page supporting English and Spanish.",
-    switch: "Switch to Serbian",
-  },
-  sr: {
-    greeting: "Pozdrav",
-    content: "Ovo je jednostavna stranica na srpskom",
-    switch: "Promjeni na Engleski",
-  },
-};
+import { translations } from '../locales/translations';
 
 export async function getStaticProps({ locale }: { locale: string }) {
   return {
@@ -58,10 +47,10 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
       </div>
 
 
-      <div className="absolute top-6 right-12 z-20">
+      <div className="absolute top-6 right-6 z-20">
         <button
           onClick={toggleLocale}
-          className="text-base font-bold tracking-widest hover:text-black transition-all duration-300 uppercase bg-white/30 backdrop-blur-md border border-white/20 shadow-lg px-10 py-3 rounded-full"
+          className="text-base font-bold tracking-widest hover:text-black transition-all duration-300 uppercase bg-gray-200/60 backdrop-blur-md border border-gray-300/20 shadow-lg px-10 py-3 rounded-full"
         >
           {language === 'sr' ? 'SR | EN' : 'SR | EN'}
         </button>
@@ -71,7 +60,7 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
       <main className="flex flex-col items-center justify-center min-h-screen px-4 py-12">
 
 
-        <div className="mb-12 w-full max-w-[600px] animate-fade-in">
+        <div className="mb-20 w-full max-w-[600px] animate-fade-in">
           <Image
             src="/graphics/ninalogo.png"
             width={600}
@@ -96,9 +85,11 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
         </nav>
 
 
-        <div className="absolute bottom-8">
+
+        {/* Insatgram icon  */}
+        <div className="absolute bottom-20 flex gap-12">
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/frizerskisalon_nina_d?igsh=M2VvdjFuM3AzNjFm"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 hover:text-black transition-colors transform hover:scale-110 duration-300"
@@ -120,7 +111,52 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
               <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
             </svg>
           </a>
+
+          {/* WhatsApp icon */}
+          <a
+            href="https://wa.me/38765601652"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-black transition-colors transform hover:scale-110 duration-300"
+            aria-label="WhatsApp"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+          </a>
+
+          {/* Phone icon */}
+          <a
+            href="tel:+38765601652"
+            className="text-gray-600 hover:text-black transition-colors transform hover:scale-110 duration-300"
+            aria-label="Phone"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </a>
         </div>
+
 
       </main>
     </div>

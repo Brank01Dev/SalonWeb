@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image'
+import Link from 'next/link';
 
 import { translations } from '../locales/translations';
 
@@ -50,7 +51,7 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
       <div className="absolute top-6 right-6 z-20">
         <button
           onClick={toggleLocale}
-          className="text-base font-bold tracking-widest hover:text-black transition-all duration-300 uppercase bg-gray-200/60 backdrop-blur-md border border-gray-300/20 shadow-lg px-10 py-3 rounded-full"
+          className="text-base font-light tracking-widest hover:text-black transition-all duration-200 uppercase bg-gray-200/60 backdrop-blur-md border border-gray-300/20 shadow-lg px-6 py-2 rounded-full"
         >
           {language === 'sr' ? 'SR | EN' : 'SR | EN'}
         </button>
@@ -73,15 +74,15 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
 
 
         <nav className="flex flex-col md:flex-row items-center gap-8 md:gap-16 text-lg font-light tracking-widest uppercase mb-16">
-          <a href="#" className="hover:text-black hover:scale-105 transition-all duration-300 border-b border-transparent hover:border-black pb-1">
+          <Link href="/" className="hover:text-black hover:scale-105 transition-all duration-300 border-b border-transparent hover:border-black pb-1">
             {language === 'sr' ? 'Početna' : 'Home'}
-          </a>
-          <a href="#" className="hover:text-black hover:scale-105 transition-all duration-300 border-b border-transparent hover:border-black pb-1">
+          </Link>
+          <Link href="/price" className="hover:text-black hover:scale-105 transition-all duration-300 border-b border-transparent hover:border-black pb-1">
             {language === 'sr' ? 'Cjenovnik' : 'Price'}
-          </a>
-          <a href="#" className="hover:text-black hover:scale-105 transition-all duration-300 border-b border-transparent hover:border-black pb-1">
+          </Link>
+          <Link href="/contact" className="hover:text-black hover:scale-105 transition-all duration-300 border-b border-transparent hover:border-black pb-1">
             {language === 'sr' ? 'Kontakt' : 'Contact'}
-          </a>
+          </Link>
         </nav>
 
 

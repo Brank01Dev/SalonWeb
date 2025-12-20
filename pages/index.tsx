@@ -74,13 +74,11 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
 
 
         <nav className="flex flex-col md:flex-row items-center gap-8 md:gap-16 text-lg font-light tracking-widest uppercase mb-16">
-          <Link href="/" className="hover:text-black hover:scale-105 transition-all duration-300 border-b border-transparent hover:border-black pb-1">
-            {language === 'sr' ? 'Početna' : 'Home'}
-          </Link>
-          <Link href="/price" className="hover:text-black hover:scale-105 transition-all duration-300 border-b border-transparent hover:border-black pb-1">
+
+          <Link href="/price" className="font-medium hover:text-black hover:scale-105 transition-all duration-300 border-b border-transparent hover:border-black pb-1">
             {language === 'sr' ? 'Cjenovnik' : 'Price'}
           </Link>
-          <Link href="/contact" className="hover:text-black hover:scale-105 transition-all duration-300 border-b border-transparent hover:border-black pb-1">
+          <Link href="/contact" className="font-medium hover:text-black hover:scale-105 transition-all duration-300 border-b border-transparent hover:border-black pb-1">
             {language === 'sr' ? 'Kontakt' : 'Contact'}
           </Link>
         </nav>
@@ -88,7 +86,7 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
 
 
         {/* Insatgram icon  */}
-        <div className="absolute bottom-20 flex gap-12">
+        <div className="absolute bottom-20 bg-white/10 p-6 backdrop-blur-[5px] border border-gray-300/20 shadow-lg rounded-full flex gap-24 mb-10">
           <a
             href="https://www.instagram.com/frizerskisalon_nina_d?igsh=M2VvdjFuM3AzNjFm"
             target="_blank"

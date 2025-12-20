@@ -30,7 +30,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     src="/graphics/background.png"
                     alt="Background"
                     fill
-                    className="object-cover opacity-30 blur-[3px]"
+                    className="object-cover opacity-40 blur-[4px]"
                     priority
                 />
                 <div className="absolute inset-0 bg-white/30" />
@@ -43,18 +43,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     <div className="absolute inset-0 bg-white/30" />
                 </div>
 
-                <header className="flex justify-between items-center p-6">
-                    <div className="w-42">
+                <header className="flex flex-col md:grid md:grid-cols-3 items-center p-6 gap-6 md:gap-0">
+                    <div className="w-42 md:justify-self-start">
                         <Image src="/graphics/ninalogo.png" alt="Logo" width={300} height={300} />
                     </div>
 
-                    <nav className="flex gap-6">
+                    <nav className="flex gap-8 items-center md:justify-self-center">
                         {navLinks.map((link) => {
                             const isActive = router.pathname === link.href;
                             if (isActive) return null;
 
                             return (
-                                <Link key={link.href} href={link.href} className="hover:text-black hover:scale-105 transition-all duration-300 border-b border-transparent hover:border-black pb-1">
+                                <Link key={link.href} href={link.href} className="text-lg font-bold tracking-widest hover:text-black hover:scale-105 transition-all duration-300 border-b border-transparent hover:border-black pb-1">
                                     {link.label}
                                 </Link>
                             )
@@ -63,7 +63,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     </nav>
 
 
-                    <button onClick={toggleLocale}>
+                    <button onClick={toggleLocale} className="md:justify-self-end font-medium hover:text-black transition-colors">
                         {language === 'sr' ? 'SR | EN' : 'SR | EN'}
                     </button>
                 </header>

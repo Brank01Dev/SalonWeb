@@ -28,8 +28,9 @@ export default function Contact({ allTranslations }: { allTranslations: any }) {
                     modules={[Autoplay]}
                     spaceBetween={30}
                     slidesPerView={2}
+                    speed={1800}
                     autoplay={{
-                        delay: 2300,
+                        delay: 1500,
                         disableOnInteraction: false,
                     }}
                     onSwiper={(swiper) => console.log(swiper)}

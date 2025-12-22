@@ -39,7 +39,7 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
     <div>
       <Head>
         <title>Frizerski Salon Nina | Vaša kosa, naša strast | Banja Luka</title>
-        <meta name="description" content="Dobrodošli u Frizerski Salon Nina u Banja Luci. Vrhunska nega kose, moderno šišanje, koloracija i svečane frizure. Zakažite termin danas!" />
+        <meta name="description" content="Dobrodošli u Frizerski Salon Nina D u Banja Luci. Vrhunska nega kose, moderno šišanje, koloracija i svečane frizure. Zakažite termin danas!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 

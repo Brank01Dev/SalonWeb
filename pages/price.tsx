@@ -23,7 +23,7 @@ export default function Price({ allTranslations }: { allTranslations: any }) {
     <div>
       <Head>
         <title>Cjenovnik Usluga | Frizerski Salon Nina Banja Luka</title>
-        <meta name="description" content="Pogledajte kompletan cjenovnik frizerskih usluga Salona Nina. Šišanje, feniranje, pramenovi i nega kose po pristupačnim cenama." />
+        <meta name="description" content="Pogledajte kompletan cjenovnik frizerskih usluga Salona Nina D. Šišanje, feniranje, pramenovi i nega kose po pristupačnim cenama." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Layout>

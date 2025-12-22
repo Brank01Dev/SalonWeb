@@ -26,7 +26,7 @@ export default function Contact({ allTranslations }: { allTranslations: any }) {
         <div>
             <Head>
                 <title>Kontakt i Lokacija | Frizerski Salon Nina</title>
-                <meta name="description" content="Pronađite nas u Karađorđevoj 11, Banja Luka. Telefon: 065 601 652. Radno vreme i zakazivanje termina." />
+                <meta name="description" content="Pronađite nas na Karađorđevoj 11, Banja Luka. Telefon: 065 601 652. Radno vreme i zakazivanje termina." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
 

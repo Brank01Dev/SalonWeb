@@ -61,9 +61,8 @@ export default function Contact({ allTranslations }: { allTranslations: any }) {
                             <div className="w-full max-w-md bg-white/10 backdrop-blur-md p-6 rounded-[2rem] border border-white/20 shadow-xl hover:bg-white/15 transition-all duration-300 group">
                                 <div className="flex items-center gap-4">
                                     <div className="p-3 bg-white/20 rounded-full text-gray-700 group-hover:text-black transition-colors">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                            <circle cx="12" cy="10" r="3"></circle>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
                                         </svg>
                                     </div>
                                     <div>
@@ -73,6 +72,29 @@ export default function Contact({ allTranslations }: { allTranslations: any }) {
                                         <p className="text-lg font-medium text-gray-800">
                                             {language === 'sr' ? 'Karađorđeva 11, Banja Luka' : 'Karadjordjeva 11, Banja Luka'}
                                         </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="w-full max-w-md bg-white/10 backdrop-blur-md p-6 rounded-[2rem] border border-white/20 shadow-xl hover:bg-white/15 transition-all duration-300 group">
+                                <div className="flex items-center gap-4">
+                                    <div className="p-3 bg-white/20 rounded-full text-gray-700 group-hover:text-black transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 className="text-sm font-light uppercase tracking-widest text-gray-500 mb-1">
+                                            {language === 'sr' ? 'Radno vrijeme' : 'Working hours'}
+                                        </h3>
+                                        <div className="flex flex-col">
+                                            <p className="text-lg font-medium text-gray-800">
+                                                {language === 'sr' ? 'PON - PET: 08:00 - 19:00' : 'MON - FRI: 08:00 - 19:00'}
+                                            </p>
+                                            <p className="text-lg font-medium text-gray-800">
+                                                {language === 'sr' ? 'SUB: 08:00 - 14:00' : 'SAT: 08:00 - 14:00'}
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -143,8 +165,7 @@ export default function Contact({ allTranslations }: { allTranslations: any }) {
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233.32077300035897!2d17.17996884703554!3d44.77151939515941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475e039c7a24df77%3A0xb93943eebeb90e1c!2sFrizerski%20salon%20Nina%20D!5e0!3m2!1sen!2sch!4v1766321617724!5m2!1sen!2sch"
                             width="100%"
-                            height="520"
-                            className="rounded-[3rem] shadow-2xl border border-white/10"
+                            className="h-[400px] md:h-[665px] rounded-[3rem] shadow-2xl border border-white/10"
                             allowFullScreen
                             loading="eager"
                             referrerPolicy="no-referrer-when-downgrade">

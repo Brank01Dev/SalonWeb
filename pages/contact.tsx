@@ -141,7 +141,7 @@ export default function Contact({ allTranslations }: { allTranslations: any }) {
                             </div>
 
                             <div className="w-full max-w-md bg-white/10 backdrop-blur-md p-6 rounded-[2rem] border border-white/20 shadow-xl hover:bg-white/15 transition-all duration-300 group">
-                                <a href="https://www.instagram.com/frizerskisalon_nina_d?igsh=M2VvdjFuM3AzNjFm" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between">
+                                <a href="https://www.instagram.com/ninad.salon" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between">
                                     <div className="flex items-center gap-4">
                                         <div className="p-3 bg-white/20 rounded-full text-gray-700 group-hover:text-pink-600 transition-colors">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -155,7 +155,7 @@ export default function Contact({ allTranslations }: { allTranslations: any }) {
                                                 Instagram
                                             </h3>
                                             <p className="text-lg font-medium text-gray-800">
-                                                @frizerskisalon_nina_d
+                                                @ninad.salon
                                             </p>
                                         </div>
                                     </div>

@@ -96,7 +96,7 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
           {/* Insatgram icon  */}
           <div className="absolute bottom-20 bg-white/10 p-6 backdrop-blur-[5px] border border-gray-300/20 shadow-lg rounded-full flex gap-24 mb-10">
             <a
-              href="https://www.instagram.com/frizerskisalon_nina_d?igsh=M2VvdjFuM3AzNjFm"
+              href="https://www.instagram.com/ninad.salon"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-black transition-colors transform hover:scale-110 duration-300"

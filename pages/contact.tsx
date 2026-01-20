@@ -46,10 +46,15 @@ export default function Contact({ allTranslations }: { allTranslations: any }) {
                             onSwiper={(swiper) => console.log(swiper)}
                             onSlideChange={() => console.log('slide change')}>
 
-                            <SwiperSlide><img src="/frisure1.jpeg" alt="image1" /></SwiperSlide>
-                            <SwiperSlide><img src="/frisure1.jpeg" alt="image2" /></SwiperSlide>
-                            <SwiperSlide><img src="/frisure1.jpeg" alt="image3" /></SwiperSlide>
-                            <SwiperSlide><img src="/frisure1.jpeg" alt="image4" /></SwiperSlide>
+                            {['/photo1.jpeg', '/photo3.jpeg', '/photo4.jpeg'].map((src, index) => (
+                                <SwiperSlide key={index}>
+                                    <img
+                                        src={src}
+                                        alt={`Salon photo ${index + 1}`}
+                                        className="w-full aspect-square md:h-[400px] object-cover rounded-2xl md:rounded-[2rem]"
+                                    />
+                                </SwiperSlide>
+                            ))}
                         </Swiper>
                     </div>
 
@@ -172,7 +177,7 @@ export default function Contact({ allTranslations }: { allTranslations: any }) {
                         </iframe>
 
                     </div>
-
+                    
                 </div>
 
             </Layout>

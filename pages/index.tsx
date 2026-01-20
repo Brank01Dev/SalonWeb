@@ -164,6 +164,9 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
             </a>
           </div>
         </main>
+        <footer className="absolute bottom-4 w-full text-center text-xs text-gray-500 font-light tracking-widest">
+          © {new Date().getFullYear()} Frizerski salon "Nina D"
+        </footer>
       </div>
     </div>
   );

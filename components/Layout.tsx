@@ -73,6 +73,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </main>
 
             </div>
+            <footer className="absolute bottom-4 w-full text-center text-xs text-gray-500 font-light tracking-widest">
+                        © {new Date().getFullYear()} Frizerski salon "Nina D"
+                    </footer>
         </div>
     );
 }

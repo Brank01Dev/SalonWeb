@@ -33,7 +33,6 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
 
   const content = allTranslations[language];
 
-  if (!showResult) return null;
 
   return (
     <div>
@@ -93,7 +92,7 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
     })
   }}
 />
-
+    {showResult && (
       <div className="relative min-h-screen w-full overflow-hidden font-sans text-gray-800">
         <div className="fixed inset-0 -z-10">
           <Image
@@ -219,6 +218,7 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
           © {new Date().getFullYear()} Frizerski salon "Nina D"
         </footer>
       </div>
+      )}
     </div>
   );
 }

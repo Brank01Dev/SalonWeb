@@ -49,9 +49,12 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
     : 'Hair salon in Banja Luka. Professional haircuts, coloring, and styling. Visit Nina D Salon. Book your appointment today!'} 
   />
 
-<meta property="og:title" content="Frizerski salon Nina D Banja Luka" />
-<meta property="og:description" content="Vaša kosa, naša strast. Najbolje šišanje i nega kose u gradu." />
-<meta property="og:image" content="https://ninadsalon.com/og-photo.png" />
+  <meta property="og:title" content="Frizerski salon Nina D Banja Luka" />
+  <meta property="og:description" content="Vaša kosa, naša strast. Najbolje šišanje i nega kose u gradu." />
+  <meta property="og:image" content="https://ninadsalon.com/og-photo.png" />
+  <meta property="og:image:width" content="1176" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:type" content="website" />
 
   <link rel="canonical" href={`https://ninadsalon.com${router.asPath}`} />
 </Head>

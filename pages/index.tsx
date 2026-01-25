@@ -38,10 +38,58 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
   return (
     <div>
       <Head>
-        <title>Frizerski Salon Nina | Vaša kosa, naša strast | Banja Luka</title>
-        <meta name="description" content="Dobrodošli u Frizerski Salon Nina D u Banja Luci. Vrhunska nega kose, moderno šišanje, koloracija i svečane frizure. Zakažite termin danas!" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+  <title>
+    {language === 'sr' 
+      ? 'Frizerski salon Banja Luka | Nina D Salon' 
+      : 'Hair Salon Banja Luka | Nina D Salon | Hair Styling'}
+  </title>
+  
+  <meta name="description" content={language === 'sr' 
+    ? 'Tražite frizerski salon u Banjoj Luci? Nina D nudi vrhunsko šišanje, bojenje kose i svečane frizure. Lokacija: Banja Luka. Zakažite termin online!' 
+    : 'Hair salon in Banja Luka. Professional haircuts, coloring, and styling. Visit Nina D Salon. Book your appointment today!'} 
+  />
+
+<meta property="og:title" content="Frizerski salon Nina D Banja Luka" />
+<meta property="og:description" content="Vaša kosa, naša strast. Najbolje šišanje i nega kose u gradu." />
+<meta property="og:image" content="https://ninadsalon.com/og-photo.png" />
+
+  <link rel="canonical" href={`https://ninadsalon.com${router.asPath}`} />
+</Head>
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "name": "Frizerski salon Nina D",
+      "image": "https://ninadsalon.com/og-photo.png",
+      "@id": "https://ninadsalon.com",
+      "url": "https://ninadsalon.com",
+      "telephone": "+38765601652",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Karadjordjeva 11",
+        "addressLocality": "Banja Luka",
+        "postalCode": "78000",
+        "addressCountry": "BA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 44.771407853492796,
+        "longitude": 17.180328318233848
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "19:00"
+      }
+    })
+  }}
+/>
 
       <div className="relative min-h-screen w-full overflow-hidden font-sans text-gray-800">
         <div className="fixed inset-0 -z-10">

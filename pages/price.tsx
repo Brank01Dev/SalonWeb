@@ -52,7 +52,7 @@ export default function Price({ allTranslations }: { allTranslations: any }) {
                     {[
                       { name: { sr: 'Šišanje', en: 'Trimming' }, prices: ['15 KM', '15 KM', '20 KM'] },
                       { name: { sr: 'Pranje i sušenje', en: 'Washing and drying' }, prices: ['10 KM', '10 KM', '15 KM'] },
-                      { name: { sr: 'Feniranje', en: 'Blow drying' }, prices: ['13 KM', '15 KM', '20-25 KM'] },
+                      { name: { sr: 'Feniranje', en: 'Blow drying' }, prices: ['13 KM', '15-20 KM', '20-35 KM'] },
                       { name: { sr: 'Pramenovi', en: 'Highlights' }, prices: ['45 KM', '70 KM', '85-120 KM'] },
                       { name: { sr: 'Farbanje', en: 'Coloring' }, prices: ['40 KM', '55 KM', '70-85 KM'] },
                       { name: { sr: 'Lokne', en: 'Curls' }, prices: ['-', '15 KM', '20-25 KM'] },
@@ -74,7 +74,7 @@ export default function Price({ allTranslations }: { allTranslations: any }) {
                 {[
                   { name: { sr: 'Šišanje', en: 'Trimming' }, prices: ['15 KM', '15 KM', '20 KM'] },
                   { name: { sr: 'Pranje i sušenje', en: 'Washing and drying' }, prices: ['10 KM', '10 KM', '15 KM'] },
-                  { name: { sr: 'Feniranje', en: 'Blow drying' }, prices: ['13 KM', '15 KM', '20-25 KM'] },
+                  { name: { sr: 'Feniranje', en: 'Blow drying' }, prices: ['13 KM', '15-20 KM', '20-35 KM'] },
                   { name: { sr: 'Pramenovi', en: 'Highlights' }, prices: ['45 KM', '70 KM', '85-120 KM'] },
                   { name: { sr: 'Farbanje', en: 'Coloring' }, prices: ['40 KM', '55 KM', '70-85 KM'] },
                   { name: { sr: 'Lokne', en: 'Curls' }, prices: ['-', '15 KM', '20-25 KM'] },
@@ -123,10 +123,10 @@ export default function Price({ allTranslations }: { allTranslations: any }) {
                   </thead>
                   <tbody>
                     {[
-                      { name: { sr: 'Šišanje', en: 'Trimming' }, prices: ['12 KM'] },
+                      { name: { sr: 'Šišanje', en: 'Trimming' }, prices: ['14 KM'] },
                       { name: { sr: 'Pranje kose', en: 'Hair washing' }, prices: ['7 KM'] },
                       { name: { sr: 'Brijanje', en: 'Beard trimming' }, prices: ['10 KM'] },
-                      { name: { sr: 'Šišanje + pranje', en: 'Trimming + washing' }, prices: ['17 KM'] },
+                      { name: { sr: 'Šišanje + pranje', en: 'Trimming + washing' }, prices: ['18 KM'] },
                       { name: { sr: 'Šišanje + brijanje', en: 'Trimming + beard trimming' }, prices: ['20 KM'] },
                       { name: { sr: 'Oblikovanje brade i brkova', en: 'Beard and mustache shaping' }, prices: ['6 KM'] },
                       { name: { sr: 'Šišanje + oblikovanje brade', en: 'Trimming + beard shaping' }, prices: ['16 KM'] },
@@ -144,10 +144,10 @@ export default function Price({ allTranslations }: { allTranslations: any }) {
 
               <div className="md:hidden space-y-6">
                 {[
-                  { name: { sr: 'Šišanje', en: 'Trimming' }, prices: ['12 KM'] },
+                  { name: { sr: 'Šišanje', en: 'Trimming' }, prices: ['14 KM'] },
                   { name: { sr: 'Pranje kose', en: 'Hair washing' }, prices: ['7 KM'] },
                   { name: { sr: 'Brijanje', en: 'Beard trimming' }, prices: ['10 KM'] },
-                  { name: { sr: 'Šišanje + pranje', en: 'Trimming + washing' }, prices: ['17 KM'] },
+                  { name: { sr: 'Šišanje + pranje', en: 'Trimming + washing' }, prices: ['18 KM'] },
                   { name: { sr: 'Šišanje + brijanje', en: 'Trimming + beard trimming' }, prices: ['20 KM'] },
                   { name: { sr: 'Oblikovanje brade i brkova', en: 'Beard and mustache shaping' }, prices: ['6 KM'] },
                   { name: { sr: 'Šišanje + oblikovanje brade', en: 'Trimming + beard shaping' }, prices: ['16 KM'] },

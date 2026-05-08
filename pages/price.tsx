@@ -129,7 +129,7 @@ export default function Price({ allTranslations }: { allTranslations: any }) {
                       { name: { sr: 'Šišanje + pranje', en: 'Trimming + washing' }, prices: ['18 KM'] },
                       { name: { sr: 'Šišanje + brijanje', en: 'Trimming + beard trimming' }, prices: ['20 KM'] },
                       { name: { sr: 'Oblikovanje brade i brkova', en: 'Beard and mustache shaping' }, prices: ['6 KM'] },
-                      { name: { sr: 'Šišanje + oblikovanje brade', en: 'Trimming + beard shaping' }, prices: ['16 KM'] },
+                      { name: { sr: 'Šišanje + oblikovanje brade', en: 'Trimming + beard shaping' }, prices: ['18 KM'] },
                     ].map((service, index) => (
                       <tr key={index} className="border-b border-gray-200 hover:bg-white/40 transition-colors">
                         <td className="py-4 px-6 font-medium text-gray-800">{language === 'sr' ? service.name.sr : service.name.en}</td>
@@ -150,7 +150,7 @@ export default function Price({ allTranslations }: { allTranslations: any }) {
                   { name: { sr: 'Šišanje + pranje', en: 'Trimming + washing' }, prices: ['18 KM'] },
                   { name: { sr: 'Šišanje + brijanje', en: 'Trimming + beard trimming' }, prices: ['20 KM'] },
                   { name: { sr: 'Oblikovanje brade i brkova', en: 'Beard and mustache shaping' }, prices: ['6 KM'] },
-                  { name: { sr: 'Šišanje + oblikovanje brade', en: 'Trimming + beard shaping' }, prices: ['16 KM'] },
+                  { name: { sr: 'Šišanje + oblikovanje brade', en: 'Trimming + beard shaping' }, prices: ['18 KM'] },
                 ].map((service, index) => (
                   <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 shadow-sm">
                     <h4 className="text-xl font-bold mb-4 text-gray-800 border-b border-gray-300 pb-2">

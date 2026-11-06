@@ -17,7 +17,7 @@ export default function Custom500() {
                 </h2>
                 <Link
                     href="/"
-                    className="px-8 py-3 bg-black text-white hover:bg-gray-800 transition-colors uppercase tracking-widest text-sm"
+                    className="px-8 py-3.5 bg-neutral-900 text-white hover:bg-neutral-800 transition-all rounded-full uppercase tracking-widest text-xs font-semibold shadow-md active:scale-95"
                 >
                     {language === 'sr' ? 'Povratak na početnu' : 'Back to home'}
                 </Link>

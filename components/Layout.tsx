@@ -34,21 +34,21 @@ export default function Layout({ children }: LayoutProps) {
   const whatsappUrl = `https://wa.me/38765601652?text=${whatsappMessage}`;
 
   return (
-    <div className="relative min-h-screen w-full flex flex-col font-sans text-neutral-800 bg-[#faf9f6]">
-      {/* Background with subtle luxury overlay */}
+    <div className="relative min-h-screen w-full flex flex-col font-sans text-neutral-800">
+      {/* Background with scissors & combs */}
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
         <Image
           src="/graphics/background.png"
           alt="Background"
           fill
-          className="object-cover opacity-25 blur-[3px]"
+          className="object-cover opacity-40 blur-[3px]"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#faf9f6]/90 via-[#faf9f6]/80 to-[#faf9f6]/95" />
+        <div className="absolute inset-0 bg-white/30" />
       </div>
 
       {/* Header */}
-      <header className="sticky top-0 z-30 w-full backdrop-blur-md bg-white/60 border-b border-neutral-200/50 transition-all">
+      <header className="sticky top-0 z-30 w-full backdrop-blur-md bg-white/30 border-b border-white/20 transition-all">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
@@ -162,7 +162,7 @@ export default function Layout({ children }: LayoutProps) {
       </main>
 
       {/* Luxury Minimalist Footer */}
-      <footer className="w-full border-t border-neutral-200/60 bg-white/40 backdrop-blur-md pt-12 pb-24 md:pb-12 mt-16 text-neutral-600">
+      <footer className="w-full border-t border-white/20 bg-white/20 backdrop-blur-md pt-12 pb-24 md:pb-12 mt-16 text-neutral-600">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
             {/* Column 1: Brand & Philosophy */}

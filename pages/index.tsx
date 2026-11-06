@@ -204,7 +204,7 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
 
             <Link
               href="/price"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-white/70 hover:bg-white text-neutral-900 border border-neutral-300/80 text-xs sm:text-sm uppercase tracking-widest font-semibold transition-all shadow-2xs hover:shadow-xs active:scale-95"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-white/40 hover:bg-white/60 text-neutral-900 border border-white/50 backdrop-blur-md text-xs sm:text-sm uppercase tracking-widest font-semibold transition-all shadow-2xs hover:shadow-xs active:scale-95"
             >
               <span>{language === 'sr' ? 'Cjenovnik Usluga' : 'View Price List'}</span>
               <ArrowRight className="w-4 h-4 text-neutral-400" />
@@ -235,7 +235,7 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
             ].map((pillar, i) => (
               <div
                 key={i}
-                className="glass-card rounded-2xl p-4 sm:p-5 text-center border border-white/80"
+                className="glass-card rounded-2xl p-4 sm:p-5 text-center border border-white/40"
               >
                 <div className="w-2 h-2 rounded-full bg-neutral-900 mx-auto mb-2 opacity-60"></div>
                 <h3 className="font-semibold text-neutral-900 text-xs sm:text-sm tracking-wide">
@@ -271,13 +271,13 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
               return (
                 <div
                   key={idx}
-                  className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/80 hover:shadow-lg transition-all group relative overflow-hidden"
+                  className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/40 hover:shadow-lg transition-all group relative overflow-hidden"
                 >
                   <div className="flex items-start justify-between mb-4">
-                    <div className="w-12 h-12 rounded-2xl bg-white border border-neutral-200/80 flex items-center justify-center text-neutral-900 shadow-2xs group-hover:scale-105 transition-transform">
+                    <div className="w-12 h-12 rounded-2xl bg-white/40 border border-white/50 backdrop-blur-md flex items-center justify-center text-neutral-900 shadow-2xs group-hover:scale-105 transition-transform">
                       <Icon className="w-5 h-5" />
                     </div>
-                    <span className="text-[10px] uppercase tracking-widest font-semibold px-2.5 py-1 rounded-full bg-neutral-100 text-neutral-600">
+                    <span className="text-[10px] uppercase tracking-widest font-semibold px-2.5 py-1 rounded-full bg-white/40 border border-white/30 text-neutral-700">
                       {language === 'sr' ? item.tag.sr : item.tag.en}
                     </span>
                   </div>
@@ -305,7 +305,7 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
         </section>
 
         {/* SALON SPACE PREVIEW (MINI GALLERY) */}
-        <section className="mb-20 glass-panel rounded-3xl p-6 sm:p-8 border border-white/80 shadow-xl">
+        <section className="mb-20 glass-panel rounded-3xl p-6 sm:p-8 border border-white/40 shadow-xl">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-2">
             <div>
               <span className="text-xs uppercase tracking-widest text-neutral-500 font-medium">
@@ -348,7 +348,7 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
         </section>
 
         {/* GOOGLE REVIEWS & TRUST BANNER */}
-        <section className="mb-20 glass-panel rounded-3xl p-8 sm:p-12 text-center max-w-3xl mx-auto border border-white/80 shadow-xl">
+        <section className="mb-20 glass-panel rounded-3xl p-8 sm:p-12 text-center max-w-3xl mx-auto border border-white/40 shadow-xl">
           <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/90 border border-neutral-200 shadow-2xs mb-5">
             <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24">
               <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
@@ -396,7 +396,7 @@ export default function Home({ allTranslations }: { allTranslations: any }) {
         </section>
 
         {/* BOUTIQUE 1-CLICK BOOKING SECTION */}
-        <section className="glass-panel rounded-3xl p-8 sm:p-12 text-center max-w-3xl mx-auto border border-white/90 shadow-2xl relative overflow-hidden">
+        <section className="glass-panel rounded-3xl p-8 sm:p-12 text-center max-w-3xl mx-auto border border-white/40 shadow-2xl relative overflow-hidden">
           <span className="text-xs uppercase tracking-widest text-emerald-800 font-semibold bg-emerald-50 border border-emerald-200/60 px-3.5 py-1.5 rounded-full inline-block mb-4">
             {language === 'sr' ? 'Jednostavno & Direktno' : 'Simple & Direct'}
           </span>
